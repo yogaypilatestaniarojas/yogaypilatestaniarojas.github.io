@@ -3,164 +3,259 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tania Rojas — Yoga y Pilates en Chicureo</title>
-<meta name="description" content="Clases de yoga y pilates en Chicureo, Colina. Práctica guiada por Tania Rojas, con atención a la respiración y la alineación.">
+<title>Yoga &amp; Pilates Tania Rojas — Chicureo</title>
+<meta name="description" content="Estudio de yoga, pilates e hipopresivos en Avenida Chicureo 3000, Colina. Clases y planes mensuales, semestrales y anuales. Inscripciones al +569 8935 4027.">
 <link rel="canonical" href="https://taniarojasyoga.com/">
-<meta property="og:title" content="Tania Rojas — Yoga y Pilates en Chicureo">
-<meta property="og:description" content="Clases de yoga y pilates en Chicureo, Colina.">
+<meta property="og:title" content="Yoga &amp; Pilates Tania Rojas — Chicureo">
+<meta property="og:description" content="Un espacio creado para ti. Yoga, pilates e hipopresivos en Avenida Chicureo 3000.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://taniarojasyoga.com/">
 <meta property="og:locale" content="es_CL">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Karla:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Karla:wght@400;500;600&display=swap">
 <style>
 :root{
-  --hueso:#F3F0EA; --papel:#FBFAF7; --tinta:#1C2420;
-  --salvia:#5E7360; --salvia-suave:#8CA089; --salvia-tenue:#DDE3D9;
-  --apagado:#5F6B63; --linea:#D8DCD3;
+  --crema:#F7F4EF; --papel:#FFFFFF; --tinta:#1A1613;
+  --taupe:#8A7A68; --taupe-claro:#B8A894; --suave:#6B6055;
+  --linea:#E2DACE; --linea-fina:#EDE7DE;
 }
 @media (prefers-color-scheme: dark){
   :root{
-    --hueso:#151A17; --papel:#1B211D; --tinta:#EDEAE3;
-    --salvia:#9DB39A; --salvia-suave:#7C8F79; --salvia-tenue:#2A332B;
-    --apagado:#A3AFA6; --linea:#2C352E;
+    --crema:#15120F; --papel:#1D1916; --tinta:#F0EBE3;
+    --taupe:#BFAC93; --taupe-claro:#8C7D6B; --suave:#ADA298;
+    --linea:#302A24; --linea-fina:#272220;
   }
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{
-  margin:0; background:var(--hueso); color:var(--tinta);
+  margin:0; background:var(--crema); color:var(--tinta);
   font-family:Karla,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   font-size:17px; line-height:1.7; -webkit-font-smoothing:antialiased;
 }
-.env{max-width:680px; margin:0 auto; padding-inline:22px}
-.portada{padding-block:clamp(4.5rem,14vw,8.5rem) clamp(3rem,8vw,5rem); text-align:center}
-.marca{
-  font-family:Karla,sans-serif; font-size:.72rem; font-weight:600;
-  letter-spacing:.32em; text-transform:uppercase; color:var(--salvia); margin:0 0 1.8rem;
+.env{max-width:760px; margin:0 auto; padding-inline:22px}
+.angosto{max-width:620px}
+
+/* ---------- el logo, rehecho en tipografia ---------- */
+.logo{text-align:center; line-height:1}
+.logo .principal{
+  font-family:"Cormorant Garamond",Georgia,serif; font-weight:400;
+  font-size:clamp(1.75rem,7vw,2.9rem); letter-spacing:.06em; margin:0;
 }
-h1{
-  font-family:"Cormorant Garamond",Georgia,serif; font-weight:300;
-  font-size:clamp(2.9rem,11vw,4.6rem); line-height:1.02; letter-spacing:-.005em;
-  margin:0 0 1.3rem; text-wrap:balance;
+.logo .filete{
+  display:flex; align-items:center; gap:.7rem;
+  margin:.55rem auto .5rem; max-width:min(340px,86%);
 }
-h1 em{font-style:italic; color:var(--salvia)}
-.lugar{
-  font-size:.95rem; color:var(--apagado); margin:0;
-  display:inline-flex; align-items:center; gap:.55rem; flex-wrap:wrap;
-  justify-content:center;
+.logo .filete span{flex:1; height:1px; background:var(--tinta)}
+.logo .pez{width:34px; height:15px; flex:none}
+.logo .nombre{
+  font-family:"Cormorant Garamond",Georgia,serif; font-weight:400;
+  font-size:clamp(.95rem,3.4vw,1.35rem); letter-spacing:.14em;
+  text-transform:uppercase; margin:0;
 }
-.punto{width:5px; height:5px; border-radius:50%; background:var(--salvia-suave); flex:none}
-.regla{height:1px; background:var(--linea); border:0; margin:0}
-section{padding-block:clamp(3rem,8vw,4.5rem)}
+header{padding-block:clamp(3.2rem,9vw,5rem) clamp(2.2rem,6vw,3.2rem)}
+.lema{
+  font-family:"Cormorant Garamond",Georgia,serif; font-style:italic; font-weight:300;
+  font-size:clamp(1.9rem,7vw,3rem); line-height:1.15; text-align:center;
+  margin:clamp(2.2rem,6vw,3.2rem) 0 1.2rem; text-wrap:balance;
+}
+.donde{
+  text-align:center; font-size:.9rem; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--taupe); margin:0;
+}
+.donde small{
+  display:block; letter-spacing:0; text-transform:none;
+  font-size:.92rem; color:var(--suave); margin-top:.35rem;
+}
+hr{height:1px; background:var(--linea); border:0; margin:0}
+
+section{padding-block:clamp(2.8rem,7vw,4rem)}
+.rotulo{
+  font-size:.68rem; font-weight:600; letter-spacing:.24em; text-transform:uppercase;
+  color:var(--taupe); margin:0 0 1rem; text-align:center;
+}
 h2{
   font-family:"Cormorant Garamond",Georgia,serif; font-weight:400;
-  font-size:clamp(1.7rem,5.5vw,2.2rem); line-height:1.15; margin:0 0 1.1rem;
-  text-wrap:balance;
+  font-size:clamp(1.65rem,5vw,2.1rem); line-height:1.2; margin:0 0 1.2rem;
+  text-align:center; text-wrap:balance;
 }
-p{margin:0 0 1.15rem; max-width:60ch}
+p{margin:0 0 1.1rem}
 p:last-child{margin-bottom:0}
-.guia{
-  font-family:Karla,sans-serif; font-size:.7rem; font-weight:600;
-  letter-spacing:.22em; text-transform:uppercase; color:var(--salvia);
-  margin:0 0 1rem;
+.mision{
+  font-family:"Cormorant Garamond",Georgia,serif; font-style:italic;
+  font-size:clamp(1.25rem,4vw,1.6rem); line-height:1.45; text-align:center;
+  color:var(--tinta); margin:0 auto; max-width:24em;
 }
-.practicas{display:grid; gap:1px; background:var(--linea); border-block:1px solid var(--linea)}
-@media (min-width:620px){ .practicas{grid-template-columns:1fr 1fr} }
-.practica{background:var(--papel); padding:2.2rem 1.8rem}
-.practica h3{
-  font-family:"Cormorant Garamond",Georgia,serif; font-weight:400;
-  font-size:1.6rem; margin:0 0 .6rem;
+
+/* ---------- disciplinas ---------- */
+.discs{display:grid; gap:1px; background:var(--linea-fina); border-block:1px solid var(--linea)}
+@media (min-width:640px){ .discs{grid-template-columns:repeat(3,1fr)} }
+.disc{background:var(--papel); padding:1.9rem 1.6rem; text-align:center}
+.disc h3{
+  font-family:"Cormorant Garamond",Georgia,serif; font-weight:500;
+  font-size:1.35rem; letter-spacing:.03em; margin:0 0 .5rem;
 }
-.practica p{font-size:.96rem; color:var(--apagado); margin:0}
-.contacto{text-align:center; padding-block:clamp(3.5rem,9vw,5.5rem)}
-.botones{display:flex; flex-wrap:wrap; gap:.8rem; justify-content:center; margin-top:1.8rem}
+.disc p{font-size:.93rem; color:var(--suave); margin:0}
+
+/* ---------- valores ---------- */
+.tabla-env{overflow-x:auto; -webkit-overflow-scrolling:touch; margin-top:.5rem}
+table{border-collapse:collapse; width:100%; min-width:430px; font-size:.95rem}
+caption{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0)}
+th,td{padding:.72rem .6rem; border-bottom:1px solid var(--linea-fina); text-align:right}
+th:first-child,td:first-child{text-align:left; font-weight:500}
+thead th{
+  font-family:Karla,sans-serif; font-size:.68rem; font-weight:600; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--taupe); border-bottom:1px solid var(--linea);
+}
+td{font-variant-numeric:tabular-nums; color:var(--suave)}
+td:first-child{color:var(--tinta)}
+tbody tr:last-child td{border-bottom:0}
+.destacada td{background:color-mix(in srgb, var(--taupe) 8%, transparent)}
+.nota-precio{font-size:.87rem; color:var(--suave); margin-top:1.1rem}
+.nota-precio strong{color:var(--tinta); font-weight:600}
+/* ---------- contacto ---------- */
+.cierre{text-align:center; padding-block:clamp(3rem,8vw,4.5rem)}
+.botones{display:flex; flex-wrap:wrap; gap:.75rem; justify-content:center; margin-top:1.7rem}
 .btn{
-  display:inline-flex; align-items:center; gap:.6rem;
-  font-family:Karla,sans-serif; font-weight:600; font-size:.95rem;
+  display:inline-flex; align-items:center; gap:.55rem; font-weight:600; font-size:.95rem;
   text-decoration:none; padding:.85rem 1.7rem; border-radius:2px;
   transition:background .2s, color .2s, border-color .2s;
 }
-.btn-principal{background:var(--salvia); color:var(--hueso)}
-.btn-principal:hover{background:var(--tinta)}
-.btn-borde{border:1px solid var(--linea); color:var(--tinta)}
-.btn-borde:hover{border-color:var(--salvia); color:var(--salvia)}
-.btn:focus-visible{outline:2px solid var(--salvia); outline-offset:3px}
-.btn svg{width:17px; height:17px; flex:none}
-footer{
-  border-top:1px solid var(--linea); padding-block:2.2rem 3rem;
-  text-align:center; color:var(--apagado); font-size:.85rem;
+.btn-lleno{background:var(--tinta); color:var(--crema)}
+.btn-lleno:hover{background:var(--taupe)}
+.btn-linea{border:1px solid var(--linea); color:var(--tinta)}
+.btn-linea:hover{border-color:var(--taupe); color:var(--taupe)}
+.btn:focus-visible{outline:2px solid var(--taupe); outline-offset:3px}
+.btn svg{width:18px; height:18px; flex:none}
+.tel{
+  font-family:"Cormorant Garamond",Georgia,serif; font-size:1.5rem; letter-spacing:.06em;
+  color:var(--tinta); text-decoration:none; display:inline-block; margin-top:1.4rem;
 }
-footer a{color:var(--apagado)}
-@media (prefers-reduced-motion:reduce){ *{transition:none!important; animation:none!important} }
+.tel:hover{color:var(--taupe)}
+
+footer{
+  border-top:1px solid var(--linea); padding-block:2rem 2.8rem;
+  text-align:center; color:var(--suave); font-size:.85rem;
+}
+footer a{color:var(--suave)}
+@media (prefers-reduced-motion:reduce){ *{transition:none!important} }
 </style>
 </head>
 <body>
 
-<header class="portada">
+<header>
   <div class="env">
-    <p class="marca">Yoga &amp; Pilates</p>
-    <h1>Tania <em>Rojas</em></h1>
-    <p class="lugar">
-      <span>Chicureo</span><span class="punto" aria-hidden="true"></span>
-      <span>Colina</span><span class="punto" aria-hidden="true"></span>
-      <span>Región Metropolitana</span>
+    <div class="logo">
+      <p class="principal">YOGA &amp; PILATES</p>
+      <div class="filete" aria-hidden="true">
+        <span></span>
+        <svg class="pez" viewBox="0 0 40 18" fill="none" stroke="currentColor" stroke-width="1.3">
+          <path d="M2 9C2 9 9 2.5 20 2.5S38 9 38 9 31 15.5 20 15.5 2 9 2 9Z"/>
+          <path d="M2 2.5 9.5 9 2 15.5"/>
+        </svg>
+        <span></span>
+      </div>
+      <p class="nombre">Tania Rojas</p>
+    </div>
+
+    <p class="lema">Un espacio creado para ti</p>
+
+    <p class="donde">
+      Avenida Chicureo 3000
+      <small>Atrás de librería Gandhi · Chicureo, Colina</small>
     </p>
   </div>
 </header>
 
-<hr class="regla">
+<hr>
 
 <section>
-  <div class="env">
-    <p class="guia">La práctica</p>
-    <h2>Volver al cuerpo, una respiración a la vez</h2>
-    <p>Yoga y pilates son dos caminos hacia lo mismo: un cuerpo que se sostiene
-    solo y una cabeza que descansa. Uno trabaja desde la respiración y la quietud;
-    el otro desde el centro y el control del movimiento.</p>
-    <p>Las clases se guían con atención a la alineación de cada persona. No hace
-    falta llegar flexible ni con experiencia — se empieza desde donde uno está.</p>
+  <div class="env angosto">
+    <p class="rotulo">Mi misión</p>
+    <p class="mision">Entregar salud y bienestar en mano de profesionales cálidas y humanas.</p>
   </div>
 </section>
 
-<div class="practicas">
-  <article class="practica">
+<div class="discs">
+  <article class="disc">
     <h3>Yoga</h3>
-    <p>Secuencias que unen respiración y postura. Se trabaja la movilidad de la
-    columna, el equilibrio y la calma que deja una práctica sostenida.</p>
+    <p>Respiración y postura. Movilidad de la columna, equilibrio y la calma que deja una práctica sostenida.</p>
   </article>
-  <article class="practica">
+  <article class="disc">
     <h3>Pilates</h3>
-    <p>Trabajo de centro, fuerza profunda y precisión en cada repetición. Alivia
-    la espalda y devuelve estabilidad a las caderas y los hombros.</p>
+    <p>Trabajo de centro y precisión. Alivia la espalda y devuelve estabilidad a caderas y hombros.</p>
+  </article>
+  <article class="disc">
+    <h3>Hipopresivos</h3>
+    <p>Planes HIPO PLUS e HIPO FULL, de 4 a 8 clases. Disponibles presencial y online.</p>
   </article>
 </div>
 
-<section class="contacto">
+<section>
   <div class="env">
-    <p class="guia">Reservas</p>
-    <h2>Escríbeme y conversamos</h2>
-    <p style="margin-inline:auto">Cuéntame qué buscas y desde dónde partes, y vemos
-    juntas qué clase te acomoda mejor.</p>
+    <p class="rotulo">Valores</p>
+    <h2>Planes de yoga y pilates</h2>
+    <div class="tabla-env">
+      <table>
+        <caption>Valores de los planes en pesos chilenos</caption>
+        <thead>
+          <tr><th scope="col">Plan</th><th scope="col">Mensual</th><th scope="col">Semestral</th><th scope="col">Anual</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">1 clase sin plan</th><td>$15.000</td><td>—</td><td>—</td></tr>
+          <tr><th scope="row">4 clases al mes</th><td>$50.000</td><td>$240.000</td><td>$420.000</td></tr>
+          <tr><th scope="row">8 clases al mes</th><td>$70.000</td><td>$390.000</td><td>$744.000</td></tr>
+          <tr><th scope="row">12 clases al mes</th><td>$80.000</td><td>$450.000</td><td>$840.000</td></tr>
+          <tr class="destacada"><th scope="row">Full Pass</th><td>$85.000</td><td>$480.000</td><td>$900.000</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="nota-precio">
+      Los planes largos bajan el valor de cada mes:
+      <strong>8 clases</strong> queda en $65.000 al mes contratando semestral y $62.000 anual ·
+      <strong>12 clases</strong> en $75.000 semestral y $70.000 anual ·
+      <strong>Full Pass</strong> en $80.000 semestral y $75.000 anual.
+    </p>
+    <p class="nota-precio">
+      <strong>Hipopresivos:</strong> HIPO PLUS y HIPO FULL, de 4 a 8 clases. Consulta el
+      PLUS incluido en tu plan contratado, o el plan exclusivo presencial u online.
+    </p>
+  </div>
+</section>
+
+<hr>
+
+<section class="cierre">
+  <div class="env angosto">
+    <p class="rotulo">Inscripciones</p>
+    <h2>Te invito a conocer este nuevo espacio</h2>
+    <p style="color:var(--suave)">Escríbeme y vemos juntas qué plan te acomoda mejor.</p>
     <div class="botones">
-      <a class="btn btn-principal" href="https://www.instagram.com/yogaypilates_taniarojas" target="_blank" rel="noopener">
+      <a class="btn btn-lleno" href="https://wa.me/56989354027" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.3.2-.6.1c-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1s0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5s0-.4 0-.5-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.5 1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4s.2-1.3.2-1.4c-.1-.1-.3-.2-.6-.3M12 2C6.5 2 2 6.5 2 12c0 2.1.6 4.1 1.6 5.8L2 22l4.3-1.6C8 21.4 10 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2"/></svg>
+        Escribir por WhatsApp
+      </a>
+      <a class="btn btn-linea" href="https://www.instagram.com/yogaypilates_taniarojas" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
           <rect x="2.5" y="2.5" width="19" height="19" rx="5.4"/>
           <circle cx="12" cy="12" r="4.2"/>
           <circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/>
         </svg>
-        Escribir por Instagram
+        Instagram
       </a>
-      <a class="btn btn-borde" href="https://www.instagram.com/yogaypilates_taniarojas" target="_blank" rel="noopener">Ver el estudio</a>
     </div>
+    <a class="tel" href="tel:+56989354027">+569 8935 4027</a>
   </div>
 </section>
 
 <footer>
   <div class="env">
-    <p style="margin:0">Yoga &amp; Pilates · Tania Rojas · Chicureo, Colina<br>
-    <a href="https://www.instagram.com/yogaypilates_taniarojas" target="_blank" rel="noopener">@yogaypilates_taniarojas</a></p>
+    <p style="margin:0">
+      Yoga &amp; Pilates · Tania Rojas<br>
+      Avenida Chicureo 3000, atrás de librería Gandhi · Chicureo, Colina<br>
+      <a href="https://www.instagram.com/yogaypilates_taniarojas" target="_blank" rel="noopener">@yogaypilates_taniarojas</a>
+    </p>
   </div>
 </footer>
 
